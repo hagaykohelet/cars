@@ -7,3 +7,6 @@ class Truck(Vehicle):
         self.max_load = max_load
 
     def calculate_annual_tax(self):
+        base_tax = 500
+        tax = (base_tax - self.max_load) * 0.5
+        return tax
